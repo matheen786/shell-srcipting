@@ -20,6 +20,7 @@ echo "$COURSE training covers shell scripting & Ansible"
 
 ## Accessing variable can be done with $var and also ${var}
 
+
 a=100
 fruit=Banana
 echo $fruit is $ano
