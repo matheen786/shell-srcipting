@@ -1,0 +1,18 @@
+
+help:		## Show this help.
+	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
+
+common:
+    @sh components/common.sh
+
+catalogue:  common ## Installing catalogue component for Roboshop Project
+    #@echo Installing Catalogue
+    @sh components/catalogue.sh
+
+
+cart:   common ## Installing cart component for Roboshop Project
+    #@echo Installing Cart
+    @sh components/cart.sh
+
+frontend:   common ## Installing frontend component for Roboshop Project
+    @sh components/frontend.sh
